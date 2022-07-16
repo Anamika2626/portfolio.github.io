@@ -1,0 +1,822 @@
+*{
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0px;
+}
+
+:root{
+    --primary-color: rgb(218, 218, 218);
+    --secondary-color: rgb(24, 23, 23);
+}
+
+.dark-theme{
+    --primary-color: rgb(24, 23, 23);
+    --secondary-color: white;
+}
+
+/*--------------------------CODE FOR HOME PAGE---------------------------*/
+
+body{
+    background-color: var(--primary-color);
+}
+
+nav{
+    display: flex;
+    background: linear-gradient(rgb(3, 27, 36),rgba(5, 69, 85, 0.685));
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.border{
+    width: 100%;
+    border-style: solid;
+    color: rgb(43, 175, 131);
+    margin-top: 2px;
+}
+
+nav>h2{
+    font-family: 'Advent Pro',sans-serif;
+    font-size: 33px;
+    margin-left: 5px;
+    color: var(--secondary-color);
+    text-shadow: 3px 2px var(--primary-color);
+    cursor: pointer;
+}
+
+div#icon1{
+    text-align: right;
+    margin-top: -49px;
+    margin-right: 28px;
+}
+
+#icon1>a{
+    text-decoration: none;
+    font-size: 22px;
+    color: var(--secondary-color);
+    padding: 4px 6px;
+    border-radius: 70px;
+    background-color: var(--primary-color);
+}
+
+div#icon2{
+    text-align: right;
+    margin-top: 0px;
+    margin-right: 0px;
+}
+
+#icon2>a{
+    text-decoration: none;
+    font-size: 22px;
+    color: var(--secondary-color);
+    padding: 4px 6px;
+    border-radius: 70px;
+    background-color: var(--primary-color);
+}
+
+#icon2>a:hover{
+    background: linear-gradient(rgb(22, 20, 20),rgba(117, 25, 25, 0.685));
+    background-color: rgb(199, 224, 58);
+    padding: 5px 7px;
+    border-radius: 20px;
+}
+
+ul.navbar{
+    margin-right: 45px;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: aquamarine;
+    padding: 8px;
+    font-family: 'Space Mono', momospace;
+    margin-right: 25px;
+}
+
+.navbar li a:hover{
+    color: rgb(4, 128, 145);
+    background-color: aquamarine;
+}
+
+ul.navbar li{
+    display: inline-block;
+}
+
+.home-page{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+    text-align: left;
+}
+
+.image{
+    flex-basis: 50%;
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 20px;
+    right: 190px;
+}
+
+.image img{
+    width: 52%;
+    border-radius: 100px;
+    position: absolute;
+    top: 20px;
+    left: 270px;
+    border-radius: 70px;
+    box-shadow: -6px -6px rgba(5, 69, 85, 0.685),6px 6px rgba(5, 69, 85, 0.685), 
+    6px 7px 18px gray;
+}
+
+div.info{
+    flex-basis: 50%;
+    width: 450px;
+    height: 250px;
+    margin-top: 160px;
+    margin-left: 180px;
+}
+
+.info h1{
+    font-size: 40px;
+    font-family: 'Exo', sans-serif;
+    margin-left: 7px;
+    color: var(--secondary-color);
+}
+
+.info p.name{
+    font-size: 35px;
+    font-family: 'Ibarra Real Nova', serif;
+    margin-top: 5px;
+    margin-left: 15px;
+    color: var(--secondary-color);
+}
+
+.info p>span{
+    color: rgb(52, 172, 132);
+}
+
+p.descrip{
+    margin-left: 15px;
+    margin-top: 8px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+.info button{
+    margin-top: 35px;
+    margin-left: 15px;
+    padding: 12px 15px;
+    border: none;
+    background: linear-gradient(rgb(11, 59, 77),rgba(12, 94, 114, 0.685));
+    cursor: pointer;
+}
+
+.info button:hover{
+    background-color: green;
+}
+
+.btn>a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-family: 'Exo',sans-serif;
+    font-weight: bold;
+}
+
+div.social-accounts{
+    margin-left: 19px;
+    margin-top: 40px;
+}
+
+.social-accounts a{
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 23px;
+    background-color: white;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 3px 7px gray;
+}
+
+.social-accounts a.github:hover{
+    width: 100px;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+.social-accounts a.linkdln:hover{
+    width: 100px;
+    color: white;
+    background-color: rgb(13, 68, 119);
+}
+
+.social-accounts a.insta:hover{
+    width: 100px;
+    background: linear-gradient(rgb(68, 3, 85),rgb(185, 8, 97),rgb(206, 12, 6),rgb(230, 181, 22));
+    color: white;
+}
+
+/*------------------------END OF CODE FOR HOME PAGE-------------------------*/
+
+/*-----------------------CODE FOR ABOUT PAGE-----------------------*/
+
+section.page1{
+    margin-top: 140px;
+}
+
+#about{
+    width: 100%;
+    padding: 40px 0;
+}
+
+.container{
+    width: 160px;
+    border: 3.5px;
+    margin-left: 595px;
+    border-style: solid;
+    color: rgb(25, 121, 81);
+}
+
+.title1{
+    text-align: center;
+}
+
+.title1 header{
+    margin: auto;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(52, 172, 132);
+    text-shadow: 1px 2px gray;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.title1 header:hover{
+    color: rgba(12, 94, 114, 0.685);
+}
+
+.title1 header::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(rgb(11, 59, 77),rgba(12, 94, 114, 0.685), rgb(255, 255, 255));
+    position: absolute;
+    top: -20px;
+    left: 110px;
+    z-index: -1;
+    transform: rotate(5deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+/*------------------PROFILE------------------*/
+
+.about-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+    text-align: left;
+}
+
+.profile{
+    flex-basis: 50%;
+    margin-left: auto;
+    margin-top: 60px;
+}
+
+.profile img{
+    width: 60%;
+    border-radius: 100px;
+    box-shadow: -6px -6px rgba(5, 69, 85, 0.685),6px 6px rgba(5, 69, 85, 0.685), 
+    -9px -8px 12px gray, -4px 6px 12px gray;
+}
+
+
+.intro{
+    flex-basis: 50%;
+    margin-left: auto;
+    margin-top: 80px;
+    height: 100%;
+}
+
+.intro p.summary{
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: var(--secondary-color);
+}
+
+.intro p.name{
+    font-size: 25px;
+    color: rgb(52, 172, 132);
+    margin-bottom: 5px;
+}
+
+.intro p.bio{
+    font-size: 17px;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--secondary-color);
+}
+
+.outer-box{
+    display: flex;
+    margin-top: 15px;
+    border: none;
+    margin-left: 40px;
+}
+
+ul.box, ul.box1{
+    flex-basis: 40%;
+}
+
+.box li, .box1 li{
+    width: 180px;
+    background: linear-gradient(rgb(11, 59, 77),rgba(12, 94, 114, 0.685), rgb(129, 158, 165));
+    margin-bottom: 17px;
+    margin-left: -25px;
+    padding: 10px 12px;
+    border-radius: 3px;
+    cursor: default;
+}
+
+.box li p, .box1 li p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 17px;
+    color: oldlace;
+}
+
+.resume{
+    margin-top: 20px;
+    padding-left: 165px;
+}
+
+.resume button{
+    padding: 14px 16px;
+    width: 170px;
+    height: 60px;
+    border: 1.5px solid var(--secondary-color);
+    background: transparent;
+    border-radius: 35px;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.resume button p{
+    color: var(--secondary-color);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+i#down{
+    margin-top: 3px;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+.resume button span{
+    width: 0;
+    height: 100%;
+    border-radius: 35px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgb(52, 172, 132), rgb(13, 67, 87));
+    transition: 0.6s;
+}
+
+.resume button:hover span{
+    width: 100%;
+}
+
+/*----------------------END OF CODE FOR ABOUT PAGE------------------------*/
+
+/*-----------------------CODE FOR EDUCATION PAGE----------------------*/
+
+section.page2{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.title2{
+    text-align: justify;
+    margin-left: 220px;
+}
+
+.title2 header{
+    margin: auto;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(52, 172, 132);
+    position: relative;
+    text-shadow: 1px 2px gray;
+    z-index: 1;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.title2 header:hover{
+    color: rgba(12, 94, 114, 0.685);
+    text-decoration: underline;
+}
+
+.title2 header::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(rgb(11, 59, 77),rgba(12, 94, 114, 0.685), rgb(255, 255, 255));
+    position: absolute;
+    top: -20px;
+    left: 130px;
+    z-index: -1;
+    transform: rotate(5deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.edu-skills{
+    display: flex;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+    text-align: left;
+}
+
+.education{
+    flex-basis: 40%;
+    height: 450px;
+    margin-left: 75px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: -1px 2px 9px gray, 1px -1px 6px gray;
+    cursor: default;
+}
+
+/*---------------------UG--------------------*/
+
+.ug, .hsc, .ssc{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.ug i{
+    font-size: 30px;
+    margin-left: 40px;
+    border: 1px solid;
+    box-shadow: 0.5px 1px 4px gray, -0.5px 0px 1px gray;
+    color: rgba(5, 75, 92, 0.685);
+    padding: 8px 5px;
+    border-radius: 40px;
+}
+
+.ug-info, .hsc-info, .ssc-info{
+    margin-left: 110px;
+    margin-top: -48px;
+    margin-bottom: 50px;
+}
+
+.ug-info header, .hsc-info header, .ssc-info header{
+    font-size: 23px;
+    font-weight: bold;
+    padding-bottom: 4px;
+    color: rgba(12, 94, 114, 0.685);
+}
+
+.ug-info p, .hsc-info p, .ssc-info p{
+    font-size: 18.5px;
+    padding-bottom: 3px;
+    color: var(--secondary-color);
+}
+
+.ug-info h3, .hsc-info h3, .ssc-info h3{
+    color: var(--secondary-color);
+}
+
+/*-----------HSC ICON------------*/
+
+.hsc i{
+    font-size: 30px;
+    margin-left: 40px;
+    border: 1px solid;
+    box-shadow: 0.5px 1px 4px gray, -0.5px 0px 1px gray;
+    color: rgba(5, 75, 92, 0.685);
+    padding: 8px 9.5px;
+    border-radius: 50px;
+}
+
+/*-----------SSC ICON------------*/
+
+.ssc i{
+    font-size: 30px;
+    margin-left: 40px;
+    border: 1px solid;
+    box-shadow: 0.5px 1px 4px gray, -0.5px 0px 1px gray;
+    color: rgba(5, 75, 92, 0.685);
+    padding: 8px 5px;
+    border-radius: 40px;
+}
+
+/*--------------------------END OF CODE FOR EDUCATION PAGE---------------------------*/
+
+/*------------------------CODE FOR SKILLS PAGE-------------------------*/
+
+.title3{
+    text-align: justify;
+    margin-top: -34px;
+    margin-left: 950px;
+}
+
+.title3 header{
+    margin: auto;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(52, 172, 132);
+    position: relative;
+    text-shadow: 1px 2px gray;
+    z-index: 1;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.title3 header:hover{
+    color: rgba(12, 94, 114, 0.685);
+    text-decoration: underline;
+}
+
+.title3 header::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(rgb(11, 59, 77),rgba(12, 94, 114, 0.685), rgb(255, 255, 255));
+    position: absolute;
+    top: -20px;
+    left: 65px;
+    z-index: -1;
+    transform: rotate(5deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.skills{
+    flex-basis: 40%;
+    height: 450px;
+    margin-left: 120px;
+    margin-top: 30px;
+    border-radius: 10px;
+    cursor: default;
+    box-shadow: -1px 2px 9px gray, 1px -1px 6px gray;
+}
+
+.html, .css, .js, .java, .jquery{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.html p, .css p, .js p, .java p, .jquery p{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(12, 94, 114, 0.685);
+}
+
+.outer-html, .outer-css, .outer-js, .outer-java, .outer-jquery{
+    width: 92%;
+    height: 10%;
+    margin-top: 17px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: ghostwhite;
+    background-color: transparent;
+    position: relative;
+}
+
+.inner-html{
+    width: 90%;
+    height: 100%;
+    border-radius: 15px;
+    border: 9.5px solid;
+    color: rgb(25, 121, 81);
+    background-color: rgb(25, 121, 81);
+    position: relative;
+
+}
+
+.inner-css{
+    width: 80%;
+    height: 100%;
+    border-radius: 15px;
+    border: 9.5px solid;
+    color: rgb(25, 121, 81);
+    background-color: rgb(25, 121, 81);
+    position: relative;
+
+}
+
+.inner-js{
+    width: 50%;
+    height: 100%;
+    border-radius: 15px;
+    border: 9.5px solid;
+    color: rgb(25, 121, 81);
+    background-color: rgb(25, 121, 81);
+    position: relative;
+
+}
+
+.inner-java{
+    width: 40%;
+    height: 100%;
+    border-radius: 15px;
+    border: 9.5px solid;
+    color: rgb(25, 121, 81);
+    background-color: rgb(25, 121, 81);
+    position: relative;
+
+}
+
+.inner-jquery{
+    width: 10%;
+    height: 100%;
+    border-radius: 15px;
+    border: 9.5px solid;
+    color: rgb(25, 121, 81);
+    background-color: rgb(25, 121, 81);
+    position: relative;
+
+}
+
+/*-------------------------END OF CODE FOR SKILLS PAGE-------------------------*/
+
+/*----------------------CODE FOR CONTACT PAGE----------------------*/
+
+section.page3{
+    margin-top: 70px;
+    width: 100%;
+}
+
+.title4{
+    text-align: justify;
+    text-align: center;
+}
+
+.title4 header{
+    margin: auto;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(52, 172, 132);
+    position: relative;
+    text-shadow: 1px 2px gray;
+    z-index: 1;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.title4 header:hover{
+    color: rgba(12, 94, 114, 0.685);
+}
+
+.title4 header::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(rgb(11, 59, 77),rgba(12, 94, 114, 0.685), rgb(255, 255, 255));
+    position: absolute;
+    top: -20px;
+    left: 65px;
+    z-index: -1;
+    transform: rotate(5deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.contact-box{
+    display: flex;
+}
+
+.contact-info{
+    flex-basis: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 500px;
+    margin-left: 73px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    background: radial-gradient(rgb(89, 174, 207), rgba(66, 139, 187, 0.8), rgb(49, 130, 177));
+    box-shadow: -2px 3px 9px rgb(128, 128, 128), 2px -2px 6px gray;
+    cursor: default;
+}
+
+.cont{
+    flex-basis: 40%;
+    height: 400px;
+    margin-top: 140px;
+    margin-left: 20px;
+}
+
+.add, .phone, .mail{
+    margin-left: 90px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.add i, .phone i, .mail i{
+    font-size: 27px;
+    color: black;
+
+}
+
+.add-info, .phone-info, .mail-info{
+    margin-left: 32px;
+    margin-top: -28px;
+}
+
+.add-info header, .phone-info header, .mail-info header{
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 130;
+    padding-bottom: 2.5px;
+}
+
+.add-info p{
+    font-size: 17px;
+    font-style: italic;
+    font-family: serif;
+}
+
+.phone-info a, .mail-info a{
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 17px;
+    color: rgb(185, 8, 97);
+}
+
+.phone-info a:hover, .mail-info a:hover{
+    text-decoration: underline;
+}
+
+.feedback-box{
+    flex-basis: 40%;
+    height: 440px;
+    margin-top: 0px;
+    margin-right: 50px;
+    border-radius: 15px;
+    box-shadow: -1px 2px 9px black, 1px -1px 6px black;
+}
+
+form h2{
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.input-box{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+input[type=text], input[type=email]{
+    width: 96%;
+    padding: 10px;
+    
+}
+
+textarea{
+    width: 96%;
+    padding: 10px;
+    border-radius: 10px;
+    height: 150px;
+    resize: none;
+    background: transparent;
+}
+
+input[type=submit]{
+    background-color: #04613f;
+    color: white;
+    font-size: 17px;
+    padding: 14px 35px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 176px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background: #1e9c1e;
+}
+
+/*-----------------END OF CODE FOR CONTACT PAGE-------------------*/
